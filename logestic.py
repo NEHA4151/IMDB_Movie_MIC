@@ -51,7 +51,7 @@ plt.show()
 metrics_dict = {"Accuracy": accuracy, "Precision": precision, "Recall": recall, "F1-score": f1}
 
 plt.figure(figsize=(8,5))
-colors = ['#FF6F61', '#6B5B95', '#88B04B', '#FFA500']  # Distinct colors
+colors = ['#FF6F61', '#6B5B95', '#88B04B', '#FFA500']  
 sns.barplot(x=list(metrics_dict.keys()), y=list(metrics_dict.values()), palette=colors)
 plt.ylim(0, 1.1)
 plt.title("Logistic Regression Performance Metrics", fontsize=14)
